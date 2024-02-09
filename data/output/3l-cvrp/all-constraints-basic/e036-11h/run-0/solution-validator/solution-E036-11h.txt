@@ -1,0 +1,170 @@
+Name:                          E036-11h
+Problem:                       3L-CVRP
+Number_of_used_Vehicles:       11
+Total_Travel_Distance:         703.353
+Calculation_Time:              -1
+Total_Iterations:              -1
+ConstraintSet:                 1
+
+------------------------------------------------------------------------------------------------
+Tour_Id:                       1
+No_of_Customers:               3
+No_of_Items:                   6
+Customer_Sequence:             1 33 6 
+
+CustId    Id        TypeId    Rotated   x         y         z         Length    Width     Height    mass      Fragility LoadingBearingStrength
+6         11        11        0         0         16        0         19        6         15        19        0         0
+33        57        57        0         36        10        0         24        15        17        9         0         0
+33        58        58        0         2         0         0         34        5         6         9         0         0
+33        59        59        0         0         5         0         35        11        17        9         1         0
+1         1         1         0         36        0         0         12        10        8         9         0         0
+1         2         2         0         35        0         8         15        10        14        9         1         0
+
+
+------------------------------------------------------------------------------------------------
+Tour_Id:                       1
+No_of_Customers:               3
+No_of_Items:                   5
+Customer_Sequence:             2 28 22 
+
+CustId    Id        TypeId    Rotated   x         y         z         Length    Width     Height    mass      Fragility LoadingBearingStrength
+22        37        37        0         0         6         0         32        13        12        12        0         0
+28        49        49        0         0         20        0         29        5         7         29        1         0
+2         3         3         1         47        0         0         16        13        12        8.66667   0         0
+2         4         4         0         0         0         0         33        6         8         8.66667   0         0
+2         5         5         1         33        0         0         23        14        13        8.66667   1         0
+
+
+------------------------------------------------------------------------------------------------
+Tour_Id:                       1
+No_of_Customers:               4
+No_of_Items:                   9
+Customer_Sequence:             5 20 15 13 
+
+CustId    Id        TypeId    Rotated   x         y         z         Length    Width     Height    mass      Fragility LoadingBearingStrength
+13        23        23        0         0         1         0         24        10        9         6         0         0
+13        24        24        0         2         3         9         14        8         13        6         0         0
+15        26        26        0         24        1         0         20        9         11        2.66667   0         0
+15        27        27        1         13        11        0         13        12        14        2.66667   1         0
+15        28        28        0         18        2         11        24        7         11        2.66667   1         0
+20        34        34        1         25        10        0         15        11        13        11        0         0
+20        35        35        0         2         6         22        28        5         8         11        1         0
+5         9         9         0         36        10        0         23        15        16        10.5      0         0
+5         10        10        0         33        9         16        25        8         7         10.5      0         0
+
+
+------------------------------------------------------------------------------------------------
+Tour_Id:                       1
+No_of_Customers:               3
+No_of_Items:                   4
+Customer_Sequence:             8 19 14 
+
+CustId    Id        TypeId    Rotated   x         y         z         Length    Width     Height    mass      Fragility LoadingBearingStrength
+14        25        25        0         0         10        0         31        10        7         31        1         0
+19        32        32        0         0         0         0         33        10        15        7.5       0         0
+19        33        33        0         0         5         15        19        6         10        7.5       0         0
+8         13        13        1         37        0         0         24        12        17        16        0         0
+
+
+------------------------------------------------------------------------------------------------
+Tour_Id:                       1
+No_of_Customers:               3
+No_of_Items:                   3
+Customer_Sequence:             17 32 3 
+
+CustId    Id        TypeId    Rotated   x         y         z         Length    Width     Height    mass      Fragility LoadingBearingStrength
+3         6         6         0         0         0         0         35        14        13        11        0         0
+32        56        56        0         35        0         0         24        13        13        28        0         0
+17        30        30        0         8         0         13        28        6         11        20        0         0
+
+
+------------------------------------------------------------------------------------------------
+Tour_Id:                       1
+No_of_Customers:               4
+No_of_Items:                   6
+Customer_Sequence:             18 24 23 16 
+
+CustId    Id        TypeId    Rotated   x         y         z         Length    Width     Height    mass      Fragility LoadingBearingStrength
+16        29        29        0         0         0         0         33        5         13        19        0         0
+23        38        38        0         0         12        0         25        11        13        2         0         0
+23        39        39        0         27        13        0         33        12        8         2         0         0
+23        40        40        0         33        3         0         26        10        6         2         0         0
+24        41        41        0         0         12        13        23        12        16        27        0         0
+18        31        31        0         31        13        8         14        12        18        13        1         0
+
+
+------------------------------------------------------------------------------------------------
+Tour_Id:                       1
+No_of_Customers:               3
+No_of_Items:                   6
+Customer_Sequence:             25 31 10 
+
+CustId    Id        TypeId    Rotated   x         y         z         Length    Width     Height    mass      Fragility LoadingBearingStrength
+10        16        16        0         0         9         0         29        6         10        8.66667   0         0
+10        17        17        0         0         16        0         22        5         15        8.66667   0         0
+10        18        18        0         7         10        10        18        6         7         8.66667   0         0
+31        54        54        0         25        15        0         19        10        14        12.5      0         0
+31        55        55        0         29        0         0         24        15        7         12.5      1         0
+25        42        42        0         9         11        17        21        5         13        14        0         0
+
+
+------------------------------------------------------------------------------------------------
+Tour_Id:                       1
+No_of_Customers:               3
+No_of_Items:                   7
+Customer_Sequence:             26 12 9 
+
+CustId    Id        TypeId    Rotated   x         y         z         Length    Width     Height    mass      Fragility LoadingBearingStrength
+9         14        14        1         6         0         0         25        13        11        14.5      0         0
+9         15        15        1         0         6         0         17        6         13        14.5      1         0
+12        21        21        0         19        15        0         14        10        12        8         0         0
+12        22        22        0         33        16        0         27        6         9         8         0         0
+26        43        43        0         20        9         0         35        6         12        6         0         0
+26        44        44        0         19        0         0         16        6         12        6         0         0
+26        45        45        0         35        0         0         20        9         13        6         1         0
+
+
+------------------------------------------------------------------------------------------------
+Tour_Id:                       1
+No_of_Customers:               3
+No_of_Items:                   5
+Customer_Sequence:             30 21 29 
+
+CustId    Id        TypeId    Rotated   x         y         z         Length    Width     Height    mass      Fragility LoadingBearingStrength
+29        50        50        0         9         14        0         23        11        11        4.33333   0         0
+29        51        51        1         0         0         0         13        9         9         4.33333   0         0
+29        52        52        0         17        7         0         15        7         7         4.33333   1         0
+21        36        36        0         32        9         0         28        15        7         28        0         0
+30        53        53        0         32        0         0         18        8         11        22        0         0
+
+
+------------------------------------------------------------------------------------------------
+Tour_Id:                       1
+No_of_Customers:               3
+No_of_Items:                   6
+Customer_Sequence:             34 27 4 
+
+CustId    Id        TypeId    Rotated   x         y         z         Length    Width     Height    mass      Fragility LoadingBearingStrength
+4         7         7         0         34        11        0         25        7         10        15        0         0
+4         8         8         0         0         11        0         34        11        16        15        1         0
+27        46        46        0         3         0         0         31        11        11        5.66667   0         0
+27        47        47        0         35        0         0         20        10        10        5.66667   1         0
+27        48        48        0         34        10        10        17        8         12        5.66667   1         0
+34        60        60        0         35        18        0         25        7         9         19        1         0
+
+
+------------------------------------------------------------------------------------------------
+Tour_Id:                       1
+No_of_Customers:               3
+No_of_Items:                   6
+Customer_Sequence:             35 11 7 
+
+CustId    Id        TypeId    Rotated   x         y         z         Length    Width     Height    mass      Fragility LoadingBearingStrength
+7         12        12        0         0         0         0         13        13        15        15        1         0
+11        19        19        1         13        1         0         24        13        18        18.5      0         0
+11        20        20        0         32        5         0         28        13        11        18.5      0         0
+35        61        61        0         26        5         11        34        14        17        3.33333   0         0
+35        62        62        0         26        19        0         16        6         7         3.33333   0         0
+35        63        63        0         26        0         0         15        5         6         3.33333   0         0
+
+

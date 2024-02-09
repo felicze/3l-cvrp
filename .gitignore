@@ -1,0 +1,8 @@
+# vs code stuff
+.vscode
+
+# python
+python/visualization/__pycache__/
+
+# ruff
+.ruff_cache

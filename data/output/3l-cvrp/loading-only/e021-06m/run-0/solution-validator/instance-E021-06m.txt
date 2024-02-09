@@ -1,0 +1,102 @@
+Name                           E021-06m
+Number_of_Customers            20
+Number_of_Items                36
+Number_of_ItemTypes            36
+Number_of_Vehicles             6
+TimeWindows                    0
+
+VEHICLE
+Mass_Capacity                  58
+CargoSpace_Length              60
+CargoSpace_Width               25
+CargoSpace_Height              30
+Wheelbase                      -1
+Max_Mass_FrontAxle             -1
+Max_Mass_RearAxle              -1
+Distance_FrontAxle_CargoSpace  -1
+
+CUSTOMERS
+i               x               y               Demand          ReadyTime       DueDate         ServiceTime     DemandedMass    DemandedVolume
+0               30              40              0               0               1000000         0               0               0
+1               42              41              3               0               1000000         0               19              8886
+2               31              32              1               0               1000000         0               29              3600
+3               5               25              2               0               1000000         0               23              8020
+4               12              42              1               0               1000000         0               21              2376
+5               36              16              2               0               1000000         0               10              6687
+6               52              41              2               0               1000000         0               15              3696
+7               27              23              1               0               1000000         0               3               5292
+8               17              33              1               0               1000000         0               41              3136
+9               13              13              1               0               1000000         0               9               1680
+10              57              58              2               0               1000000         0               28              4272
+11              62              42              3               0               1000000         0               8               9530
+12              42              57              1               0               1000000         0               8               1680
+13              16              57              2               0               1000000         0               16              6152
+14              8               52              3               0               1000000         0               10              12000
+15              7               38              3               0               1000000         0               28              11718
+16              27              68              1               0               1000000         0               7               1170
+17              30              48              1               0               1000000         0               15              1024
+18              43              67              3               0               1000000         0               14              4140
+19              58              48              2               0               1000000         0               6               2723
+20              58              27              1               0               1000000         0               19              1728
+
+ITEMS
+Type            Length          Width           Height          Mass            Fragility       LoadingBearingStrength
+Bt1             19              6               17              6.33333         0               0
+Bt2             30              15              10              6.33333         1               0
+Bt3             18              8               17              6.33333         1               0
+Bt4             30              10              12              29              0               0
+Bt5             34              14              11              11.5            0               0
+Bt6             29              6               16              11.5            0               0
+Bt7             22              12              9               21              0               0
+Bt8             36              8               16              5               0               0
+Bt9             33              7               9               5               0               0
+Bt10            19              6               14              7.5             0               0
+Bt11            25              6               14              7.5             1               0
+Bt12            21              14              18              3               1               0
+Bt13            32              7               14              41              0               0
+Bt14            15              7               16              9               0               0
+Bt15            30              12              10              14              0               0
+Bt16            16              6               7               14              0               0
+Bt17            34              13              13              2.66667         0               0
+Bt18            32              7               11              2.66667         0               0
+Bt19            12              11              10              2.66667         0               0
+Bt20            20              12              7               8               0               0
+Bt21            29              8               18              8               0               0
+Bt22            19              8               13              8               1               0
+Bt23            30              12              16              3.33333         0               0
+Bt24            22              10              12              3.33333         0               0
+Bt25            16              15              15              3.33333         1               0
+Bt26            29              12              16              9.33333         0               0
+Bt27            30              13              9               9.33333         0               0
+Bt28            22              10              12              9.33333         0               0
+Bt29            13              10              9               7               1               0
+Bt30            16              8               8               15              0               0
+Bt31            15              14              11              4.66667         0               0
+Bt32            20              10              6               4.66667         0               0
+Bt33            15              7               6               4.66667         0               0
+Bt34            13              13              7               3               0               0
+Bt35            14              10              11              3               1               0
+Bt36            24              9               8               19              0               0
+
+DEMANDS PER CUSTOMER
+i    Type Quantity
+1    Bt1  1 Bt2  1 Bt3  1 
+2    Bt4  1 
+3    Bt5  1 Bt6  1 
+4    Bt7  1 
+5    Bt8  1 Bt9  1 
+6    Bt10 1 Bt11 1 
+7    Bt12 1 
+8    Bt13 1 
+9    Bt14 1 
+10   Bt15 1 Bt16 1 
+11   Bt17 1 Bt18 1 Bt19 1 
+12   Bt20 1 
+13   Bt21 1 Bt22 1 
+14   Bt23 1 Bt24 1 Bt25 1 
+15   Bt26 1 Bt27 1 Bt28 1 
+16   Bt29 1 
+17   Bt30 1 
+18   Bt31 1 Bt32 1 Bt33 1 
+19   Bt34 1 Bt35 1 
+20   Bt36 1 

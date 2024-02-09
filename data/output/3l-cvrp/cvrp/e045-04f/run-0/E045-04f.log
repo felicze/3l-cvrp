@@ -1,0 +1,121 @@
+
+Gurobi 10.0.3 (win64, C++) logging started Wed Feb  7 02:20:20 2024
+
+Set parameter TokenServer to value "141.30.89.215"
+Set parameter Threads to value 8
+Set parameter LazyConstraints to value 1
+Set parameter PreCrush to value 1
+Set parameter TimeLimit to value 28800
+Set parameter SolutionLimit to value 10000
+Gurobi Optimizer version 10.0.3 build v10.0.3rc0 (win64)
+
+CPU model: AMD EPYC 7513 32-Core Processor, instruction set [SSE2|AVX|AVX2]
+Thread count: 16 physical cores, 16 logical processors, using up to 8 threads
+
+Optimize a model with 1036 rows, 2025 columns and 5940 nonzeros
+Model fingerprint: 0x9e4d7f52
+Variable types: 0 continuous, 2025 integer (2025 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e-02, 2e+02]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 6e+00]
+
+Warning: Completing partial solution with 1930 unfixed non-continuous variables out of 2025
+User MIP start produced solution with objective 1612.27 (0.00s)
+Loaded user MIP start with objective 1612.27
+
+Presolve removed 1 rows and 45 columns
+Presolve time: 0.01s
+Presolved: 1035 rows, 1980 columns, 5808 nonzeros
+Variable types: 0 continuous, 1980 integer (1980 binary)
+
+Root relaxation: objective 5.272679e+02, 139 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0  527.26785    0   42 1612.26917  527.26785  67.3%     -    0s
+     0     0  631.07896    0    - 1612.26917  631.07896  60.9%     -    0s
+     0     0  657.97388    0   50 1612.26917  657.97388  59.2%     -    0s
+     0     0  726.78810    0   52 1612.26917  726.78810  54.9%     -    0s
+     0     0  760.51267    0    - 1612.26917  760.51267  52.8%     -    0s
+     0     0  785.68985    0   64 1612.26917  785.68985  51.3%     -    0s
+     0     0  792.63369    0    - 1612.26917  792.63369  50.8%     -    0s
+     0     0  792.81643    0    - 1612.26917  792.81643  50.8%     -    0s
+     0     0  794.61370    0   69 1612.26917  794.61370  50.7%     -    0s
+     0     0  798.91532    0    - 1612.26917  798.91532  50.4%     -    0s
+     0     0  799.89526    0   52 1612.26917  799.89526  50.4%     -    0s
+     0     0  810.91967    0    - 1612.26917  810.91967  49.7%     -    0s
+     0     0  811.68874    0   73 1612.26917  811.68874  49.7%     -    0s
+     0     0  834.80582    0   20 1612.26917  834.80582  48.2%     -    1s
+     0     0  854.20813    0   76 1612.26917  854.20813  47.0%     -    1s
+     0     0  865.04357    0   74 1612.26917  865.04357  46.3%     -    2s
+     0     0  871.03746    0   44 1612.26917  871.03746  46.0%     -    2s
+     0     0  874.41074    0   52 1612.26917  874.41074  45.8%     -    2s
+     0     0  876.60993    0   69 1612.26917  876.60993  45.6%     -    2s
+     0     0  887.46069    0    - 1612.26917  887.46069  45.0%     -    2s
+     0     0  890.19510    0   84 1612.26917  890.19510  44.8%     -    2s
+     0     0  893.09890    0   77 1612.26917  893.09890  44.6%     -    2s
+     0     0  894.46460    0   16 1612.26917  894.46460  44.5%     -    3s
+     0     0  894.49635    0   24 1612.26917  894.49635  44.5%     -    3s
+     0     0  894.64631    0   56 1612.26917  894.64631  44.5%     -    3s
+     0     0  894.82325    0   48 1612.26917  894.82325  44.5%     -    3s
+     0     2  894.85723    0   48 1612.26917  894.85723  44.5%     -    3s
+    31    30  901.08027    5   26 1612.26917  897.27613  44.3%  79.3    5s
+   181   179  910.73114   15   30 1612.26917  897.27613  44.3%  56.6   10s
+  1505  1324 1051.92165  105  234 1612.26917  897.47614  44.3%  27.3   15s
+  1527  1339  908.00635   33  363 1612.26917  899.89752  44.2%  26.9   20s
+  1690  1463  904.40318   25  360 1612.26917  899.98060  44.2%  33.3   25s
+  2320  1808  909.72380   24  293 1612.26917  900.09929  44.2%  38.8   30s
+Warning: Completing partial solution with 1930 unfixed non-continuous variables out of 2025
+H 2878  1767                     924.7288845  900.09929  2.66%  38.9   30s
+Warning: Completing partial solution with 1930 unfixed non-continuous variables out of 2025
+H 3019  1530                     917.9682750  900.75344  1.88%  40.6   31s
+  4902  1941  911.77042   20  113  917.96827  904.00602  1.52%  44.2   37s
+  6626  2376  915.95869   40   42  917.96827  905.48209  1.36%  46.3   40s
+ 10088  3267  916.14414   30  224  917.96827  907.77044  1.11%  49.6   45s
+ 12748  3615     cutoff   26       917.96827  909.58749  0.91%  52.3   50s
+ 15730  3754     cutoff   32       917.96827  910.97747  0.76%  53.6   55s
+ 18040  3634  916.10016   25  211  917.96827  911.95264  0.66%  54.7   60s
+ 21068  3171     cutoff   41       917.96827  913.30386  0.51%  55.4   65s
+ 23728  2409  917.51103   39  282  917.96827  914.41485  0.39%  55.5   70s
+ 27527   517     cutoff   28       917.96827  916.38726  0.17%  54.1   76s
+
+Cutting planes:
+  User: 1207
+  Gomory: 102
+  MIR: 11
+  Flow cover: 7
+  Zero half: 80
+  Relax-and-lift: 1
+  Lazy constraints: 460
+
+Explored 29109 nodes (1530847 simplex iterations) in 76.79 seconds (117.57 work units)
+Thread count was 8 (of 16 available processors)
+
+Solution count 3: 917.968 924.729 1612.27 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 9.179682749770e+02, best bound 9.179682749770e+02, gap 0.0000%
+
+User-callback calls 66121, time in user-callback 12.15 sec
+### START EXACT APPROACH ###
+ProblemVariant: 6
+### START PREPROCESSING ###
+## Start infeasible path procedure ## 
+Deleted arcs: 0
+Infeasible tail paths: 0
+Infeasible 2-node combinations: 0
+Deleted arcs: 0
+Infeasible tail paths: 0
+Infeasible 2-node combinations: 0
+## Start start solution procedure ##
+Start solution with 6 Vehicles and total costs 1612.27 in 0.00391 s.
+### END PREPROCESSING ###
+Route 0 0-2-25-26-23-22-19-20-21-0 : weight util 0.791045 | volume util 0.982156 | 
+Route 1 0-10-18-17-16-1-15-9-0 : weight util 0.561194 | volume util 0.995756 | 
+Route 2 0-24-14-13-12-11-0 : weight util 0.671642 | volume util 0.982178 | 
+Route 3 0-37-36-7-5-6-27-29-28-0 : weight util 0.244279 | volume util 0.992222 | 
+Route 4 0-38-42-41-30-43-44-8-0 : weight util 0.478109 | volume util 0.981889 | 
+Route 5 0-39-40-34-31-32-33-35-3-4-0 : weight util 0.845771 | volume util 0.991000 | 
