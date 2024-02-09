@@ -1,0 +1,1 @@
+This directory provides the solutions generated with the branch-and-cut algorithm for each 3L-CVRP variant.

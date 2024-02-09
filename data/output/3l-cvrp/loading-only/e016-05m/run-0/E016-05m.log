@@ -1,0 +1,92 @@
+
+Gurobi 10.0.0 (win64, C++) logging started Fri Nov 24 00:15:15 2023
+
+Set parameter TokenServer to value "141.30.89.215"
+Warning: Gurobi version mismatch between C++ 10.0.3 and C library 10.0.0
+Set parameter Threads to value 8
+Set parameter LazyConstraints to value 1
+Set parameter PreCrush to value 1
+Set parameter TimeLimit to value 28800
+Set parameter SolutionLimit to value 10000
+Gurobi Optimizer version 10.0.0 build v10.0.0rc2 (win64)
+
+CPU model: AMD EPYC 7513 32-Core Processor, instruction set [SSE2|AVX|AVX2]
+Thread count: 16 physical cores, 16 logical processors, using up to 8 threads
+
+Optimize a model with 137 rows, 256 columns and 720 nonzeros
+Model fingerprint: 0x1a2123f5
+Variable types: 0 continuous, 256 integer (256 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [8e+00, 6e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 5e+00]
+
+User MIP start produced solution with objective 350.582 (0.00s)
+Loaded user MIP start with objective 350.582
+
+Presolve removed 2 rows and 18 columns
+Presolve time: 0.00s
+Presolved: 135 rows, 238 columns, 669 nonzeros
+Variable types: 0 continuous, 238 integer (238 binary)
+
+Root relaxation: objective 2.862678e+02, 57 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0  286.26777    0    -  350.58163  286.26777  18.3%     -    0s
+     0     0  294.19409    0    -  350.58163  294.19409  16.1%     -    0s
+     0     0  295.17078    0   24  350.58163  295.17078  15.8%     -    0s
+     0     0  302.74724    0   12  350.58163  302.74724  13.6%     -    0s
+     0     0  306.08709    0   14  350.58163  306.08709  12.7%     -    0s
+     0     0  312.86093    0   12  350.58163  312.86093  10.8%     -    0s
+     0     0  316.31737    0   36  350.58163  316.31737  9.77%     -    0s
+     0     0  321.74234    0   16  350.58163  321.74234  8.23%     -    0s
+     0     0  321.89887    0   28  350.58163  321.89887  8.18%     -    0s
+     0     0  323.12901    0   41  350.58163  323.12901  7.83%     -    0s
+     0     0  324.81533    0   49  350.58163  324.81533  7.35%     -    0s
+     0     0  325.56177    0   31  350.58163  325.56177  7.14%     -    0s
+     0     0  325.57312    0   54  350.58163  325.57312  7.13%     -    0s
+     0     0  325.70226    0   56  350.58163  325.70226  7.10%     -    0s
+     0     0  325.80034    0   57  350.58163  325.80034  7.07%     -    0s
+     0     0  325.80034    0   56  350.58163  325.80034  7.07%     -    0s
+     0     0  325.80034    0   53  350.58163  325.80034  7.07%     -    0s
+     0     2  325.80034    0   48  350.58163  325.80034  7.07%     -    0s
+H   17    10                     341.9984295  329.23134  3.73%  32.9    0s
+H  136    60                     334.9638862  329.45525  1.64%  14.7    1s
+
+Cutting planes:
+  User: 181
+  Clique: 1
+  MIR: 1
+  Lazy constraints: 51
+
+Explored 294 nodes (3708 simplex iterations) in 2.23 seconds (0.22 work units)
+Thread count was 8 (of 16 available processors)
+
+Solution count 3: 334.964 341.998 350.582 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 3.349638862376e+02, best bound 3.349638862376e+02, gap 0.0000%
+
+User-callback calls 971, time in user-callback 1.93 sec
+### START EXACT APPROACH ###
+ProblemVariant: 5
+### START PREPROCESSING ###
+## Start infeasible path procedure ## 
+Deleted arcs: 2
+Infeasible tail paths: 0
+Infeasible 2-node combinations: 1
+## Start extended infeasible path procedure ##
+Deleted arcs: 2
+Infeasible tail paths: 0
+Infeasible 2-node combinations: 1
+## Start start solution procedure ##
+Start solution with 5 Vehicles and total costs 350.582 in 0.0039893 s.
+### END PREPROCESSING ###
+Route 0 0-1-3-2-0 : weight util 0.963636 | volume util 0.287511 | feasible with packing heuristic | feasible with CP model
+Route 1 0-6-11-5-0 : weight util 1.000000 | volume util 0.366000 | feasible with packing heuristic | feasible with CP model
+Route 2 0-7-8-0 : weight util 0.763636 | volume util 0.217111 | feasible with packing heuristic | feasible with CP model
+Route 3 0-12-15-10-9-0 : weight util 1.000000 | volume util 0.379378 | feasible with packing heuristic | feasible with CP model
+Route 4 0-14-13-4-0 : weight util 0.963636 | volume util 0.411000 | feasible with packing heuristic | feasible with CP model

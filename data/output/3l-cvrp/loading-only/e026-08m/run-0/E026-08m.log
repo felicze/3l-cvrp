@@ -1,0 +1,109 @@
+
+Gurobi 10.0.0 (win64, C++) logging started Fri Nov 24 00:17:13 2023
+
+Set parameter TokenServer to value "141.30.89.215"
+Warning: Gurobi version mismatch between C++ 10.0.3 and C library 10.0.0
+Set parameter Threads to value 8
+Set parameter LazyConstraints to value 1
+Set parameter PreCrush to value 1
+Set parameter TimeLimit to value 28800
+Set parameter SolutionLimit to value 10000
+Gurobi Optimizer version 10.0.0 build v10.0.0rc2 (win64)
+
+CPU model: AMD EPYC 7513 32-Core Processor, instruction set [SSE2|AVX|AVX2]
+Thread count: 16 physical cores, 16 logical processors, using up to 8 threads
+
+Optimize a model with 352 rows, 676 columns and 1950 nonzeros
+Model fingerprint: 0xa05f8f65
+Variable types: 0 continuous, 676 integer (676 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [5e+00, 9e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 8e+00]
+
+User MIP start produced solution with objective 762.37 (0.00s)
+Loaded user MIP start with objective 762.37
+
+Presolve removed 40 rows and 104 columns
+Presolve time: 0.00s
+Presolved: 312 rows, 572 columns, 1641 nonzeros
+Variable types: 0 continuous, 572 integer (572 binary)
+
+Root relaxation: objective 4.668467e+02, 90 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0  466.84671    0    -  762.37040  466.84671  38.8%     -    0s
+     0     0  492.83241    0   18  762.37040  492.83241  35.4%     -    0s
+     0     0  544.57218    0   23  762.37040  544.57218  28.6%     -    0s
+     0     0  577.09959    0   36  762.37040  577.09959  24.3%     -    0s
+     0     0  584.01615    0   20  762.37040  584.01615  23.4%     -    0s
+     0     0  587.78365    0   40  762.37040  587.78365  22.9%     -    0s
+     0     0  591.47143    0   49  762.37040  591.47143  22.4%     -    0s
+     0     0  596.08994    0   64  762.37040  596.08994  21.8%     -    0s
+     0     0  600.47910    0   71  762.37040  600.47910  21.2%     -    0s
+     0     0  601.38920    0   58  762.37040  601.38920  21.1%     -    0s
+     0     0  602.38510    0   80  762.37040  602.38510  21.0%     -    0s
+     0     0  602.88061    0   72  762.37040  602.88061  20.9%     -    0s
+     0     0  602.94620    0   81  762.37040  602.94620  20.9%     -    0s
+     0     0  602.97829    0   77  762.37040  602.97829  20.9%     -    0s
+     0     0  603.04581    0   82  762.37040  603.04581  20.9%     -    0s
+     0     0  603.11791    0   77  762.37040  603.11791  20.9%     -    0s
+     0     0  603.11791    0   72  762.37040  603.11791  20.9%     -    0s
+H    0     0                     740.5142286  603.11791  18.6%     -    1s
+H    0     2                     731.7111970  603.11791  17.6%     -    1s
+     0     2  604.17203    0   66  731.71120  604.17203  17.4%     -    1s
+    63    74  605.08160    8   69  731.71120  604.43769  17.4%  40.1    5s
+   169   180  607.12422   20   32  731.71120  604.43769  17.4%  30.0   10s
+H  261   267                     689.9174827  604.43769  12.4%  28.1   12s
+  1517  1269  673.78225   79   74  689.91748  607.94324  11.9%  18.6   15s
+H 1901  1518                     640.9443292  608.39382  5.08%  21.8   16s
+H 2052  1468                     634.0001553  608.39382  4.04%  22.3   17s
+H 2310  1349                     630.1275730  608.39382  3.45%  23.1   18s
+  6318  2625  627.55726   43   45  630.12757  611.79709  2.91%  24.2   20s
+ 16204  4874  629.36282   20   69  630.12757  619.27561  1.72%  28.7   25s
+ 24753  2548     cutoff   27       630.12757  625.00591  0.81%  30.5   30s
+
+Cutting planes:
+  User: 1274
+  Gomory: 9
+  Clique: 7
+  MIR: 2
+  Flow cover: 7
+  Zero half: 46
+  RLT: 1
+  Lazy constraints: 251
+
+Explored 28586 nodes (841384 simplex iterations) in 31.80 seconds (31.37 work units)
+Thread count was 8 (of 16 available processors)
+
+Solution count 7: 630.128 634 640.944 ... 762.37
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 6.301275729831e+02, best bound 6.301275729831e+02, gap 0.0000%
+
+User-callback calls 58724, time in user-callback 14.90 sec
+### START EXACT APPROACH ###
+ProblemVariant: 5
+### START PREPROCESSING ###
+## Start infeasible path procedure ## 
+Deleted arcs: 78
+Infeasible tail paths: 0
+Infeasible 2-node combinations: 39
+## Start extended infeasible path procedure ##
+Deleted arcs: 78
+Infeasible tail paths: 0
+Infeasible 2-node combinations: 39
+## Start start solution procedure ##
+Start solution with 8 Vehicles and total costs 762.37 in 2.87927 s.
+### END PREPROCESSING ###
+Route 0 0-3-0 : weight util 0.854167 | volume util 0.046200 | feasible with packing heuristic | feasible with CP model
+Route 1 0-10-25-4-2-0 : weight util 0.979167 | volume util 0.547733 | feasible with packing heuristic | feasible with CP model
+Route 2 0-12-11-8-9-0 : weight util 1.000000 | volume util 0.538333 | feasible with packing heuristic | feasible with CP model
+Route 3 0-15-19-0 : weight util 0.937500 | volume util 0.334400 | feasible with packing heuristic | feasible with CP model
+Route 4 0-16-13-7-1-0 : weight util 1.000000 | volume util 0.578311 | feasible with packing heuristic | feasible with CP model
+Route 5 0-17-5-14-0 : weight util 0.958333 | volume util 0.606222 | feasible with packing heuristic | feasible with CP model
+Route 6 0-21-20-6-23-0 : weight util 0.958333 | volume util 0.536889 | feasible with packing heuristic | feasible with CP model
+Route 7 0-22-18-24-0 : weight util 0.958333 | volume util 0.426689 | feasible with packing heuristic | feasible with CP model

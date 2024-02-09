@@ -1,0 +1,33 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: 3L-CVRP
+message: >-
+  If you use this software or data set, please cite it using
+  the metadata from this file.
+type: software
+authors:
+  - given-names: Felix
+    family-names: Tamke
+    email: felix.tamke@tu-dresden.de
+    affiliation: 'TU Dresden, Clover Optimization'
+    orcid: 'https://orcid.org/0000-0003-1650-8936'
+  - given-names: Leopold
+    family-names: Kuttner
+    email: leopold.kuttner@tu-dresden.de
+    affiliation: 'TU Dresden, Clover Optimization'
+    orcid: 'https://orcid.org/0000-0002-9359-8835'
+  - given-names: Florian
+    family-names: Linß
+    email: florian.linss@tu-dresden.de
+    affiliation: TU Dresden
+    orcid: 'https://orcid.org/0000-0002-5869-0425'
+repository-code: 'https://github.com/felicze/3l-cvrp'
+abstract: >-
+  This repository provides instances, solutions, a simple
+  visualizer based on streamlit, and source code for a
+  branch-and-cut algorithm for vehicle routing problems with
+  three-dimensional loading constraints.
+version: '0.1'
+date-released: '2024-02-09'
