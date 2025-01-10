@@ -1,0 +1,197 @@
+{
+    "BranchAndCutParams": {
+        "ActivateIntraRouteImprovement": false,
+        "ActivateHeuristic": false,
+        "ActivateMemoryManagement": false,
+        "ActivateSetPartHeur": false,
+        "CutSeparationMaxNodes": -1,
+        "CutSeparationStartNodes": 0,
+        "CutSeparationThreshold": 100,
+        "EnableMinVehicleLifting": false,
+        "SimpleVersion": true,
+        "IntraRouteFullEnumThreshold": 6,
+        "MinVehicleLiftingThreshold": 0.5,
+        "SetPartHeurThreshold": 20,
+        "StartSolution": "None",
+        "TimeLimit": [
+            [
+                "Exact",
+                1.7976931348623157e+308
+            ],
+            [
+                "ExactLimit",
+                1
+            ],
+            [
+                "Heuristic",
+                1
+            ],
+            [
+                "TwoPath",
+                4
+            ],
+            [
+                "MinInfSet",
+                4
+            ],
+            [
+                "RegularPath",
+                1
+            ],
+            [
+                "MinInfPath",
+                1
+            ],
+            [
+                "ReversePath",
+                1
+            ]
+        ]
+    },
+    "CPSolverParams": {
+        "EnableCumulativeDimensions": false,
+        "EnableNoOverlap2DFloor": false,
+        "LogFlag": false,
+        "Seed": 1000,
+        "Threads": 8
+    },
+    "ExtremePointParams": {
+        "Algorithm": "ExtremePoint",
+        "EnableExtremePointZ": false,
+        "EnableNormalPatternAugmentation": true,
+        "EnableOutwardProjection": false,
+        "EnablePlacementPointDuplicateRemovalAndSort": false,
+        "FullEnumerationThreshold": 7,
+        "IterationLimit": 2,
+        "LIFOViolationThreshold": 0,
+        "Metaheuristic": "IteratedGreedyLocalSearch",
+        "MoveEvaluationDistance": 3,
+        "PackingPerturbations": 1,
+        "PerturbationNumber": 2,
+        "PerturbationSwapDistance": 3,
+        "PlacementHeuristic": "LexicographicXYZdX",
+        "SearchCharacteristic": "BestFit",
+        "Seed": 120,
+        "SortingHeuristic": "Zhang2015"
+    },
+    "MIPSolverParams": {
+        "CutGeneration": -1,
+        "DisablePreCrush": 1,
+        "EnableLazyConstraints": 1,
+        "NumericFocus": 0,
+        "Seed": 0,
+        "SolutionLimit": 10000,
+        "Threads": 8,
+        "TimeLimit": 28800
+    },
+    "LoadingProblemParams":{
+    "ProblemVariant": "AllConstraints",
+    "SupportArea": 0.75
+  },
+    "UserCutParams": {
+        "EpsForIntegrality": 0.00001,
+        "MaxCutsAdd": [
+            [
+                "RCC",
+                100
+            ],
+            [
+                "CAT",
+                10
+            ],
+            [
+                "DKplus",
+                10
+            ],
+            [
+                "MSTAR",
+                50
+            ],
+            [
+                "GLM",
+                1
+            ],
+            [
+                "FCI",
+                50
+            ],
+            [
+                "SCI",
+                1
+            ],
+            [
+                "DKminus",
+                10
+            ]
+        ],
+        "MaxCutsSeparate": [
+            [
+                "RCC",
+                200
+            ],
+            [
+                "CAT",
+                10
+            ],
+            [
+                "DKplus",
+                10
+            ],
+            [
+                "MSTAR",
+                100
+            ],
+            [
+                "GLM",
+                1
+            ],
+            [
+                "FCI",
+                100
+            ],
+            [
+                "SCI",
+                0
+            ],
+            [
+                "DKminus",
+                10
+            ]
+        ],
+        "MaxViolationCutLazy": 1,
+        "ViolationThreshold": [
+            [
+                "RCC",
+                0.1
+            ],
+            [
+                "CAT",
+                0.1
+            ],
+            [
+                "DKplus",
+                0.1
+            ],
+            [
+                "MSTAR",
+                0.1
+            ],
+            [
+                "GLM",
+                0.1
+            ],
+            [
+                "FCI",
+                0.1
+            ],
+            [
+                "SCI",
+                0.1
+            ],
+            [
+                "DKminus",
+                0.1
+            ]
+        ]
+    }
+}
