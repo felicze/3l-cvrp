@@ -1,0 +1,89 @@
+---
+# We'll use defaults from the LLVM style, but with 4 columns indentation.
+BasedOnStyle: LLVM
+---
+Language: Cpp
+Standard: Cpp11
+# Donwload the latest stable LLVM version: http://releases.llvm.org/download.html
+# Install and provide the path to clang-format.exe in:
+# Tools -> Options -> Text-Editor -> C/C++ -> Formatting -> General -> Use custom clang-format .exe file
+# ###############
+# For options see: https://clang.llvm.org/docs/ClangFormatStyleOptions.html
+# Interactive configurator: https://zed0.co.uk/clang-format-configurator/
+AlignAfterOpenBracket: Align
+AlignConsecutiveAssignments: false
+AlignConsecutiveDeclarations: false
+AlignOperands: true
+AlignTrailingComments: false
+#AllowAllArgumentsOnNextLine: false
+#AllowAllConstructorInitializersOnNextLine: false
+AllowAllParametersOfDeclarationOnNextLine: false
+AllowShortBlocksOnASingleLine: false
+AllowShortLoopsOnASingleLine: false
+AllowShortIfStatementsOnASingleLine: false
+AlwaysBreakTemplateDeclarations: MultiLine
+BraceWrapping:
+  AfterControlStatement: true
+  AfterClass: true
+  AfterEnum: true
+  AfterFunction: true
+  AfterNamespace: true
+  AfterUnion: true
+  AfterExternBlock: true
+  AfterStruct: true
+  BeforeCatch: true
+  BeforeElse: true
+  SplitEmptyFunction: false
+  SplitEmptyRecord: true
+  SplitEmptyNamespace: true
+BreakBeforeBraces: Allman
+BinPackArguments: false
+BinPackParameters: false
+Cpp11BracedListStyle: true
+BreakBeforeBinaryOperators: NonAssignment
+BreakBeforeTernaryOperators: true
+BreakConstructorInitializers: BeforeColon
+BreakInheritanceList: BeforeColon
+ColumnLimit: 120
+ConstructorInitializerAllOnOneLineOrOnePerLine: true
+ConstructorInitializerIndentWidth: 0
+ContinuationIndentWidth: 4
+FixNamespaceComments: false
+IncludeBlocks: Preserve # Regroup places "../stdafx.h" after other includes...
+# Can be fixed with regex in LLVM 9. The following Regex expression must be altered:
+#IncludeCategories:
+#  - Regex:           '^"(llvm|llvm-c|clang|clang-c)/'
+#  Priority:        2
+#  - Regex:           '^(<|"(gtest|gmock|isl|json)/)'
+#  Priority:        3
+#  - Regex:           '<[[:alnum:].]+>'
+#  Priority:        4
+#  - Regex:           '.*'
+#  Priority:        1
+IndentPPDirectives: AfterHash
+IndentCaseLabels: true
+IndentWidth: 4
+IndentWrappedFunctionNames: true
+KeepEmptyLinesAtTheStartOfBlocks: false
+MaxEmptyLinesToKeep: 1
+NamespaceIndentation: None
+PointerAlignment: Left
+ReflowComments: true
+SortIncludes: true
+SortUsingDeclarations: true
+SpaceAfterCStyleCast: false
+#SpaceAfterLogicalNot: false
+SpaceAfterTemplateKeyword: true
+SpaceBeforeAssignmentOperators: true
+SpaceBeforeCtorInitializerColon: true
+SpaceBeforeInheritanceColon: true
+SpaceBeforeParens: ControlStatements
+SpaceBeforeRangeBasedForLoopColon: false
+SpaceInEmptyParentheses: false
+SpacesInAngles: false
+SpacesInCStyleCastParentheses: false
+SpacesInContainerLiterals: false
+SpacesInParentheses: false
+SpacesInSquareBrackets: false
+TabWidth: 4
+UseTab: Never

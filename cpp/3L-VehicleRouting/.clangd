@@ -1,0 +1,17 @@
+CompileFlags:                     # Tweak the parse settings
+  Add: [-xc++, -Wall, -Wextra, -Wshadow, -Wconversion, -Wpedantic, -Werror]             # treat all files as C++, enable more warnings
+  CompilationDatabase: "build/Debug"
+  Remove: -Wpragma-once-outside-header                     # strip all other warning-related flags
+  Compiler: gcc               # Change argv[0] of compile flags to `clang++`
+
+Diagnostics:
+  # Tweak Clang-Tidy checks.
+  Suppress: [pp_file_not_found]
+  ClangTidy:
+    Add: [performance*, modernize*, readability*]
+    Remove: [modernize-use-trailing-return-type, modernize-concat-nested-namespaces, readability-identifier-length]
+    CheckOptions:
+      readability-identifier-naming.LocalVariableCase: camelBack
+      readability-identifier-naming.PrivateMemberCase: CamelCase
+      readability-identifier-naming.PrivateMemberPrefix: m
+      readability-identifier-naming.PublicMemberCase: CamelCase
