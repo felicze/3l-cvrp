@@ -1,8 +1,11 @@
-# vs code stuff
-.vscode
+# cpp 
+build/
+
+# results
+data/output/3l-cvrp/test/
 
 # python
 python/visualization/__pycache__/
-
+python/.venv/
 # ruff
 .ruff_cache
