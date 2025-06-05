@@ -186,7 +186,7 @@ def plot_element_bar(element_data):
         ],
     ]
     if "InfTailPath" in count_data:
-        bars.append(["Tail path", count_data["InfTailPath"], time_data["InfTailPath"]])
+        bars.append(["Infeasible tail path", count_data["InfTailPath"], time_data["InfTailPath"]])
     else:
         bars.append(["Tail tournament path", count_data["TailTournamentPath"], time_data["TailTournamentPath"]])
     bars.append(["Reverse path check", count_data["RevSeq"], time_data["RevSeq"]])
