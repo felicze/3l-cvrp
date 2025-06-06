@@ -1,17 +1,17 @@
 {
     "BranchAndCutParams": {
-        "ActivateIntraRouteImprovement": true,
         "ActivateHeuristic": true,
+        "ActivateIntraRouteImprovement": true,
         "ActivateMemoryManagement": true,
         "ActivateSetPartHeur": true,
         "CutSeparationMaxNodes": 2147483647,
         "CutSeparationStartNodes": 200,
         "CutSeparationThreshold": 100,
         "EnableMinVehicleLifting": true,
-        "SimpleVersion": false,										 
         "IntraRouteFullEnumThreshold": 6,
         "MinVehicleLiftingThreshold": 0.5,
         "SetPartHeurThreshold": 20,
+        "SimpleVersion": false,
         "StartSolution": "ModifiedSavings",
         "TimeLimit": [
             [
@@ -27,8 +27,8 @@
                 1
             ],
             [
-                "TwoPath",
-                4
+                "MinInfPath",
+                1
             ],
             [
                 "MinInfSet",
@@ -39,14 +39,15 @@
                 1
             ],
             [
-                "MinInfPath",
+                "ReversePath",
                 1
             ],
             [
-                "ReversePath",
-                1
+                "TwoPath",
+                4
             ]
-        ]
+        ],
+        "TrackIncrementalFeasibilityProperty": true
     },
     "CPSolverParams": {
         "EnableCumulativeDimensions": false,
@@ -74,6 +75,10 @@
         "Seed": 120,
         "SortingHeuristic": "Zhang2015"
     },
+    "LoadingProblemParams": {
+        "ProblemVariant": "AllConstraints",
+        "SupportArea": 0.75
+    },
     "MIPSolverParams": {
         "CutGeneration": -1,
         "DisablePreCrush": 1,
@@ -84,19 +89,15 @@
         "Threads": 8,
         "TimeLimit": 28800
     },
-    "LoadingProblemParams":{
-    "ProblemVariant": "AllConstraints",
-    "SupportArea": 0.75
-  },
     "UserCutParams": {
-        "EpsForIntegrality": 0.00001,
+        "EpsForIntegrality": 1e-05,
         "MaxCutsAdd": [
             [
-                "RCC",
-                100
+                "CAT",
+                10
             ],
             [
-                "CAT",
+                "DKminus",
                 10
             ],
             [
@@ -104,7 +105,7 @@
                 10
             ],
             [
-                "MSTAR",
+                "FCI",
                 50
             ],
             [
@@ -112,25 +113,25 @@
                 1
             ],
             [
-                "FCI",
-                50
+                "MSTAR",
+                12
+            ],
+            [
+                "RCC",
+                25
             ],
             [
                 "SCI",
                 1
-            ],
-            [
-                "DKminus",
-                10
             ]
         ],
         "MaxCutsSeparate": [
             [
-                "RCC",
-                200
+                "CAT",
+                10
             ],
             [
-                "CAT",
+                "DKminus",
                 10
             ],
             [
@@ -138,7 +139,7 @@
                 10
             ],
             [
-                "MSTAR",
+                "FCI",
                 100
             ],
             [
@@ -146,26 +147,26 @@
                 1
             ],
             [
-                "FCI",
-                100
+                "MSTAR",
+                25
+            ],
+            [
+                "RCC",
+                50
             ],
             [
                 "SCI",
                 0
-            ],
-            [
-                "DKminus",
-                10
             ]
         ],
         "MaxViolationCutLazy": 1,
         "ViolationThreshold": [
             [
-                "RCC",
+                "CAT",
                 0.1
             ],
             [
-                "CAT",
+                "DKminus",
                 0.1
             ],
             [
@@ -173,7 +174,7 @@
                 0.1
             ],
             [
-                "MSTAR",
+                "FCI",
                 0.1
             ],
             [
@@ -181,15 +182,15 @@
                 0.1
             ],
             [
-                "FCI",
+                "MSTAR",
+                0.1
+            ],
+            [
+                "RCC",
                 0.1
             ],
             [
                 "SCI",
-                0.1
-            ],
-            [
-                "DKminus",
                 0.1
             ]
         ]
