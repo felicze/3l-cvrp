@@ -1,0 +1,89 @@
+
+Gurobi 12.0.1 (win64, C++) logging started Tue Apr 22 09:50:16 2025
+
+Set parameter Username
+Set parameter LicenseID to value 2618655
+Academic license - for non-commercial use only - expires 2026-02-05
+Set parameter Threads to value 8
+Set parameter LazyConstraints to value 1
+Set parameter PreCrush to value 1
+Set parameter Seed to value 0
+Set parameter Cuts to value -1
+Set parameter TimeLimit to value 28800
+Set parameter NumericFocus to value 0
+Set parameter SolutionLimit to value 10000
+Gurobi Optimizer version 12.0.1 build v12.0.1rc0 (win64 - Windows Server 2022.0 (20348.2))
+
+CPU model: AMD EPYC 7513 32-Core Processor, instruction set [SSE2|AVX|AVX2]
+Thread count: 18 physical cores, 18 logical processors, using up to 8 threads
+
+Non-default parameters:
+SolutionLimit  10000
+TimeLimit  28800
+PreCrush  1
+Threads  8
+LazyConstraints  1
+
+Optimize a model with 255 rows, 484 columns and 1388 nonzeros
+Model fingerprint: 0xa1fc4919
+Variable types: 0 continuous, 484 integer (484 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [3e+00, 8e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 6e+00]
+Presolve removed 6 rows and 30 columns
+Presolve time: 0.00s
+Presolved: 249 rows, 454 columns, 1300 nonzeros
+Variable types: 0 continuous, 454 integer (454 binary)
+
+Root relaxation: objective 3.576230e+02, 79 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0  357.62304    0   14          -  357.62304      -     -    0s
+     0     0  371.96520    0    -          -  371.96520      -     -    0s
+     0     0  413.91655    0   15          -  413.91655      -     -    0s
+     0     0  424.33003    0   10          -  424.33003      -     -    0s
+     0     0  460.66559    0   53          -  460.66559      -     -    0s
+     0     0  461.20519    0   39          -  461.20519      -     -    0s
+     0     0  472.55741    0   41          -  472.55741      -     -    0s
+     0     0  472.80600    0   42          -  472.80600      -     -    0s
+     0     0  472.80600    0   35          -  472.80600      -     -    0s
+     0     2  472.80600    0   35          -  472.80600      -     -    0s
+*   65    56               8     519.8002998  486.97520  6.31%  47.4    3s
+*   77    64               7     498.1572394  486.97520  2.24%  44.4    4s
+   122    77  491.09920    9   45  498.15724  489.03333  1.83%  39.4    5s
+
+Cutting planes:
+  Lazy constraints: 2156
+
+Explored 977 nodes (24725 simplex iterations) in 8.91 seconds (2.11 work units)
+Thread count was 8 (of 18 available processors)
+
+Solution count 2: 498.157 519.8 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 4.981572394012e+02, best bound 4.981572394012e+02, gap 0.0000%
+
+User-callback calls 2359, time in user-callback 7.22 sec
+### START EXACT APPROACH ###
+ProblemVariant: 1
+### START PREPROCESSING ###
+## Start infeasible path procedure ## 
+Deleted arcs: 8
+Infeasible tail paths: 1
+Infeasible 2-node combinations: 4
+## Start extended infeasible path procedure ##
+Deleted arcs: 8
+Infeasible tail paths: 1
+Infeasible 2-node combinations: 4
+## Start start solution procedure ##
+### END PREPROCESSING ###
+Route 0 0-1-2-5-0 : weight util 0.975000 | volume util 0.349000 | feasible with packing heuristic | feasible with CP model
+Route 1 0-11-4-3-6-8-0 : weight util 0.975000 | volume util 0.485889 | infeasible with packing heuristic | feasible with CP model
+Route 2 0-12-9-7-10-0 : weight util 0.800000 | volume util 0.406089 | feasible with packing heuristic | feasible with CP model
+Route 3 0-13-19-0 : weight util 0.950000 | volume util 0.250489 | feasible with packing heuristic | feasible with CP model
+Route 4 0-15-18-20-14-0 : weight util 0.975000 | volume util 0.536778 | feasible with packing heuristic | feasible with CP model
+Route 5 0-16-21-17-0 : weight util 0.950000 | volume util 0.205356 | feasible with packing heuristic | feasible with CP model

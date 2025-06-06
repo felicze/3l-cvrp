@@ -1,17 +1,28 @@
 
-Gurobi 10.0.0 (win64, C++) logging started Fri Nov 24 00:15:40 2023
+Gurobi 12.0.1 (win64, C++) logging started Thu Apr 17 22:34:15 2025
 
-Set parameter TokenServer to value "141.30.89.215"
-Warning: Gurobi version mismatch between C++ 10.0.3 and C library 10.0.0
+Set parameter Username
+Academic license - for non-commercial use only - expires 2026-01-06
 Set parameter Threads to value 8
 Set parameter LazyConstraints to value 1
 Set parameter PreCrush to value 1
+Set parameter Seed to value 10
+Set parameter Cuts to value -1
 Set parameter TimeLimit to value 28800
+Set parameter NumericFocus to value 0
 Set parameter SolutionLimit to value 10000
-Gurobi Optimizer version 10.0.0 build v10.0.0rc2 (win64)
+Gurobi Optimizer version 12.0.1 build v12.0.1rc0 (win64 - Windows Server 2022.0 (20348.2))
 
 CPU model: AMD EPYC 7513 32-Core Processor, instruction set [SSE2|AVX|AVX2]
-Thread count: 16 physical cores, 16 logical processors, using up to 8 threads
+Thread count: 18 physical cores, 18 logical processors, using up to 8 threads
+
+Non-default parameters:
+SolutionLimit  10000
+TimeLimit  28800
+PreCrush  1
+Seed  10
+Threads  8
+LazyConstraints  1
 
 Optimize a model with 254 rows, 484 columns and 1386 nonzeros
 Model fingerprint: 0x4bce8bdd
@@ -36,31 +47,32 @@ Root relaxation: objective 3.576230e+02, 79 iterations, 0.00 seconds (0.00 work 
  Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
 
      0     0  357.62304    0   14  617.69669  357.62304  42.1%     -    0s
-     0     0  413.91655    0   23  617.69669  413.91655  33.0%     -    0s
-     0     0  460.66559    0   32  617.69669  460.66559  25.4%     -    0s
-     0     0  471.64206    0   40  617.69669  471.64206  23.6%     -    0s
-     0     0  477.55788    0   52  617.69669  477.55788  22.7%     -    0s
-     0     0  486.39195    0   38  617.69669  486.39195  21.3%     -    0s
-     0     0  487.08637    0    -  617.69669  487.08637  21.1%     -    0s
-     0     0  487.09993    0    -  617.69669  487.09993  21.1%     -    0s
-     0     0  487.33538    0   43  617.69669  487.33538  21.1%     -    0s
-     0     2  487.49341    0   32  617.69669  487.49341  21.1%     -    0s
-*  122   107              12     496.2900002  488.83188  1.50%  19.6    2s
-*  183   107              16     495.8477702  488.95257  1.39%  16.0    2s
+     0     0  374.50338    0    -  617.69669  374.50338  39.4%     -    0s
+     0     0  413.91655    0   13  617.69669  413.91655  33.0%     -    0s
+     0     0  428.31656    0   23  617.69669  428.31656  30.7%     -    0s
+     0     0  462.12566    0   17  617.69669  462.12566  25.2%     -    0s
+     0     0  466.65419    0   17  617.69669  466.65419  24.5%     -    0s
+     0     0  470.31623    0   25  617.69669  470.31623  23.9%     -    0s
+     0     0  473.82558    0   51  617.69669  473.82558  23.3%     -    0s
+     0     0  473.94796    0   62  617.69669  473.94796  23.3%     -    0s
+     0     0  473.94796    0   51  617.69669  473.94796  23.3%     -    0s
+     0     2  473.94796    0   51  617.69669  473.94796  23.3%     -    0s
+*   34    36               6     495.8477702  488.86367  1.41%  47.7    0s
 
 Cutting planes:
-  User: 117
-  Lazy constraints: 139
+  MIR: 1
+  GUB cover: 1
+  Lazy constraints: 1984
 
-Explored 663 nodes (8877 simplex iterations) in 3.21 seconds (0.32 work units)
-Thread count was 8 (of 16 available processors)
+Explored 427 nodes (10447 simplex iterations) in 3.51 seconds (0.93 work units)
+Thread count was 8 (of 18 available processors)
 
-Solution count 3: 495.848 496.29 617.697 
+Solution count 2: 495.848 617.697 
 
 Optimal solution found (tolerance 1.00e-04)
 Best objective 4.958477702001e+02, best bound 4.958477702001e+02, gap 0.0000%
 
-User-callback calls 1720, time in user-callback 2.80 sec
+User-callback calls 1227, time in user-callback 2.57 sec
 ### START EXACT APPROACH ###
 ProblemVariant: 5
 ### START PREPROCESSING ###
@@ -73,11 +85,11 @@ Deleted arcs: 8
 Infeasible tail paths: 0
 Infeasible 2-node combinations: 4
 ## Start start solution procedure ##
-Start solution with 6 Vehicles and total costs 617.697 in 0.010117 s.
+Start solution with 6 Vehicles and total costs 617.697 in 0.0114017 s.
 ### END PREPROCESSING ###
-Route 0 0-2-1-3-4-0 : weight util 1.000000 | volume util 0.312000 | feasible with packing heuristic | feasible with CP model
+Route 0 0-4-3-1-2-0 : weight util 1.000000 | volume util 0.312000 | feasible with packing heuristic | feasible with CP model
 Route 1 0-9-7-5-6-8-0 : weight util 0.975000 | volume util 0.618978 | feasible with packing heuristic | feasible with CP model
 Route 2 0-11-10-12-15-0 : weight util 1.000000 | volume util 0.455978 | feasible with packing heuristic | feasible with CP model
-Route 3 0-13-16-0 : weight util 0.850000 | volume util 0.151933 | feasible with packing heuristic | feasible with CP model
-Route 4 0-14-17-20-18-0 : weight util 1.000000 | volume util 0.498622 | feasible with packing heuristic | feasible with CP model
+Route 3 0-14-17-20-18-0 : weight util 1.000000 | volume util 0.498622 | feasible with packing heuristic | feasible with CP model
+Route 4 0-16-13-0 : weight util 0.850000 | volume util 0.151933 | feasible with packing heuristic | feasible with CP model
 Route 5 0-19-21-0 : weight util 0.800000 | volume util 0.196089 | feasible with packing heuristic | feasible with CP model

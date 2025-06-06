@@ -1,16 +1,29 @@
 
-Gurobi 10.0.3 (win64, C++) logging started Tue Feb  6 17:39:35 2024
+Gurobi 12.0.1 (win64, C++) logging started Tue Apr 22 09:15:28 2025
 
-Set parameter TokenServer to value "141.30.89.215"
+Set parameter Username
+Set parameter LicenseID to value 2618661
+Academic license - for non-commercial use only - expires 2026-02-05
 Set parameter Threads to value 8
 Set parameter LazyConstraints to value 1
 Set parameter PreCrush to value 1
+Set parameter Seed to value 10
+Set parameter Cuts to value -1
 Set parameter TimeLimit to value 28800
+Set parameter NumericFocus to value 0
 Set parameter SolutionLimit to value 10000
-Gurobi Optimizer version 10.0.3 build v10.0.3rc0 (win64)
+Gurobi Optimizer version 12.0.1 build v12.0.1rc0 (win64 - Windows Server 2022.0 (20348.2))
 
 CPU model: AMD EPYC 7513 32-Core Processor, instruction set [SSE2|AVX|AVX2]
-Thread count: 16 physical cores, 16 logical processors, using up to 8 threads
+Thread count: 18 physical cores, 18 logical processors, using up to 8 threads
+
+Non-default parameters:
+SolutionLimit  10000
+TimeLimit  28800
+PreCrush  1
+Seed  10
+Threads  8
+LazyConstraints  1
 
 Optimize a model with 277 rows, 529 columns and 1518 nonzeros
 Model fingerprint: 0x635e650c
@@ -29,7 +42,7 @@ Presolve time: 0.00s
 Presolved: 271 rows, 496 columns, 1422 nonzeros
 Variable types: 0 continuous, 496 integer (496 binary)
 
-Root relaxation: objective 5.577212e+02, 75 iterations, 0.00 seconds (0.00 work units)
+Root relaxation: objective 5.577212e+02, 79 iterations, 0.00 seconds (0.00 work units)
 
     Nodes    |    Current Node    |     Objective Bounds      |     Work
  Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
@@ -38,43 +51,35 @@ Root relaxation: objective 5.577212e+02, 75 iterations, 0.00 seconds (0.00 work 
      0     0  565.67595    0    -  726.26559  565.67595  22.1%     -    0s
      0     0  566.12691    0    -  726.26559  566.12691  22.0%     -    0s
      0     0  574.35112    0    -  726.26559  574.35112  20.9%     -    0s
-     0     0  585.18964    0   13  726.26559  585.18964  19.4%     -    0s
-     0     0  591.93180    0   32  726.26559  591.93180  18.5%     -    0s
-     0     0  608.62857    0    -  726.26559  608.62857  16.2%     -    0s
-     0     0  609.16899    0    -  726.26559  609.16899  16.1%     -    0s
-     0     0  611.29425    0    -  726.26559  611.29425  15.8%     -    0s
-     0     0  617.25383    0   40  726.26559  617.25383  15.0%     -    0s
-     0     0  624.84966    0   20  726.26559  624.84966  14.0%     -    0s
-     0     0  627.71270    0   27  726.26559  627.71270  13.6%     -    0s
-     0     0  630.44109    0   44  726.26559  630.44109  13.2%     -    0s
-     0     0  630.64896    0   30  726.26559  630.64896  13.2%     -    0s
-     0     0  636.57007    0   15  726.26559  636.57007  12.4%     -    0s
-     0     0  636.86551    0   34  726.26559  636.86551  12.3%     -    0s
-     0     0  637.13140    0   55  726.26559  637.13140  12.3%     -    0s
-     0     0  637.36518    0   14  726.26559  637.36518  12.2%     -    0s
-     0     2  637.36518    0   14  726.26559  637.36518  12.2%     -    0s
-*   15    11               4     676.8386242  637.36518  5.83%  39.8    0s
-H  103    79                     675.1401346  637.81443  5.53%  18.0    0s
-H  695   469                     674.7668002  641.23347  4.97%   9.6    1s
-*  708   469              33     670.8093828  641.41318  4.38%   9.5    1s
-H  749   470                     666.2618561  642.19579  3.61%   9.7    1s
-* 1826   739              45     664.4619644  647.38725  2.57%  10.0    1s
+     0     0  585.18964    0   41  726.26559  585.18964  19.4%     -    0s
+     0     0  595.95720    0    -  726.26559  595.95720  17.9%     -    0s
+     0     0  598.36939    0   41  726.26559  598.36939  17.6%     -    0s
+     0     0  600.79062    0   16  726.26559  600.79062  17.3%     -    0s
+     0     0  619.61318    0   14  726.26559  619.61318  14.7%     -    0s
+     0     0  624.41372    0   14  726.26559  624.41372  14.0%     -    0s
+     0     0  626.97754    0   27  726.26559  626.97754  13.7%     -    0s
+     0     0  628.86983    0   27  726.26559  628.86983  13.4%     -    0s
+     0     0  628.86983    0   21  726.26559  628.86983  13.4%     -    0s
+     0     2  628.86983    0   21  726.26559  628.86983  13.4%     -    0s
+*  186   198              19     681.8805647  637.36518  6.53%  19.8    0s
+H  217   197                     680.0806730  637.36518  6.28%  19.3    0s
+*  518   424              21     674.1598232  641.17351  4.89%  18.6    1s
+*  522   424              22     667.0873172  641.17351  3.88%  18.6    1s
+*  702   429              21     666.2618561  643.99335  3.34%  17.9    1s
+* 1048   433              15     664.4619644  648.95431  2.33%  18.0    1s
 
 Cutting planes:
-  User: 158
-  StrongCG: 1
-  Zero half: 2
-  Lazy constraints: 144
+  Lazy constraints: 931
 
-Explored 7893 nodes (81379 simplex iterations) in 2.43 seconds (1.50 work units)
-Thread count was 8 (of 16 available processors)
+Explored 2197 nodes (34643 simplex iterations) in 1.82 seconds (1.22 work units)
+Thread count was 8 (of 18 available processors)
 
-Solution count 7: 664.462 666.262 670.809 ... 726.266
+Solution count 7: 664.462 666.262 667.087 ... 726.266
 
 Optimal solution found (tolerance 1.00e-04)
 Best objective 6.644619643811e+02, best bound 6.644619643811e+02, gap 0.0000%
 
-User-callback calls 16296, time in user-callback 1.24 sec
+User-callback calls 4866, time in user-callback 0.64 sec
 ### START EXACT APPROACH ###
 ProblemVariant: 6
 ### START PREPROCESSING ###
@@ -86,9 +91,9 @@ Deleted arcs: 10
 Infeasible tail paths: 0
 Infeasible 2-node combinations: 5
 ## Start start solution procedure ##
-Start solution with 4 Vehicles and total costs 726.266 in 0.001549 s.
+Start solution with 4 Vehicles and total costs 726.266 in 0.0021841 s.
 ### END PREPROCESSING ###
-Route 0 0-11-10-0 : weight util 0.961111 | volume util 0.133333 | 
-Route 1 0-14-17-15-16-3-2-1-6-13-9-0 : weight util 0.620889 | volume util 0.963556 | 
+Route 0 0-9-13-6-1-2-3-16-15-17-14-0 : weight util 0.620889 | volume util 0.963556 | 
+Route 1 0-10-11-0 : weight util 0.961111 | volume util 0.133333 | 
 Route 2 0-18-19-22-20-0 : weight util 0.287778 | volume util 0.751311 | 
 Route 3 0-21-4-5-8-7-12-0 : weight util 0.394444 | volume util 0.981667 | 
