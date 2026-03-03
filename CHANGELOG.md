@@ -20,7 +20,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
-## [1.0.0] - 2025-01-11
+## [0.1.0] - 2025-01-11
 
 ### Added
 - Initial release of the branch-and-cut algorithm for 3L-CVRP
