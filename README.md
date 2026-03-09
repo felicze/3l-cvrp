@@ -1,8 +1,12 @@
 # Vehicle routing problems with three-dimensional loading constraints
 
-This repo is part of the manuscript *A branch-and-cut algorithm for vehicle routing problems with three-dimensional loading constraints*, which is currently under review.
+This repo is part of the article:
 
-The repo contains the instances, solutions, the source code of the algorithm, and a visualizer for the solutions and solver statistics.
+>Tamke, F., Linß, F., Kuttner, L., & Buscher, U. (2025). A branch-and-cut algorithm for vehicle routing problems with three-dimensional loading constraints. *European Journal of Operational Research*, [DOI: 10.1016/j.ejor.2025.10.010](https://doi.org/10.1016/j.ejor.2025.10.010).
+
+A preprint of the accepted version is avaiable on [arxiv](https://arxiv.org/abs/2402.14868). The repo contains the instances, solutions, the source code of the algorithm, and a visualizer for the solutions and solver statistics.
+
+The solver is intended for experimentation and research. This is **not the technology used in the commercial [Clover Optimization](https://cloveropt.com) platform**, which is based on highly scalable heuristic algorithms designed for real-world logistics planning.
 
 ## Abstract
 This paper presents a new branch-and-cut algorithm based on infeasible path elimination for the three-dimensional loading capacitated vehicle routing problem (3L-CVRP) with different loading problem variants. We show that a previously infeasible route can become feasible by adding a new customer if support constraints are enabled in the loading subproblem and call this the incremental feasibility property. Consequently, different infeasible path definitions apply to different 3L-CVRP variants and we introduce several variant-depending lifting steps to strengthen infeasible path inequalities. The loading subproblem is solved exactly using a flexible constraint programming model to determine the feasibility or infeasibility of a route. An extreme point-based packing heuristic is implemented to reduce time-consuming calls to the exact loading algorithm. Furthermore, we integrate a start solution procedure and periodically combine memoized feasible routes in a set-partitioning-based heuristic to generate new upper bounds. A comprehensive computational study, employing well-known benchmark instances, showcases the significant performance improvements achieved through the algorithmic enhancements. Consequently, we not only prove the optimality of many best-known heuristic solutions for the first time but also introduce new optimal and best solutions for a large number of instances.
@@ -114,7 +118,7 @@ The source code of the branch-and-cut algorithm is located in subdirectory [cpp/
 ### Setup General
 
 #### Requirements
-- [Gurobi 10.0.3](https://www.gurobi.com/downloads/) or newer
+- [Gurobi 12.0.1](https://www.gurobi.com/downloads/) or newer
 - [Google or-tools 9.8](https://github.com/google/or-tools/releases/tag/v9.8) or newer
 - [boost 1.79](https://www.boost.org/users/history/version_1_79_0.html) or newer
 
@@ -130,10 +134,10 @@ Install [boost 1.79](https://www.boost.org/users/history/version_1_79_0.html) or
 
 Install [tbb](https://askubuntu.com/questions/1170054/install-newest-tbb-thread-building-blocks-on-ubuntu-18-04).
 
-Download [or-tools 9.8](https://github.com/google/or-tools/releases/tag/v9.8) or newer and [gurobi 10.0.3](https://www.gurobi.com/downloads/) or newer and extract to `/opt`:
+Download [or-tools 9.8](https://github.com/google/or-tools/releases/tag/v9.8) or newer and [gurobi 12.0.1](https://www.gurobi.com/downloads/) or newer and extract to `/opt`:
 ```
 sudo tar -xvzf or-tools_amd64_ubuntu-22.04_cpp_v9.8.3296.tar.gz -C /opt 
-sudo tar -xvzf gurobi10.0.3_linux64.tar.gz -C /opt
+sudo tar -xvzf gurobi12.0.1_linux64.tar.gz -C /opt
 ```
 
 Rebuild Gurobi for [full compatibility with different compilers](https://support.gurobi.com/hc/en-us/articles/360039093112-How-do-I-resolve-undefined-reference-errors-while-linking-Gurobi-in-C).
@@ -149,7 +153,7 @@ git clone https://github.com/felicze/3l-cvrp.git
 ```
 Install [boost 1.79](https://www.boost.org/users/history/version_1_79_0.html) or newer.
 
-Download [or-tools 9.8](https://github.com/google/or-tools/releases/tag/v9.8) or newer and [gurobi 10.0.3](https://www.gurobi.com/downloads/) or newer.
+Download [or-tools 9.8](https://github.com/google/or-tools/releases/tag/v9.8) or newer and [gurobi 12.0.1](https://www.gurobi.com/downloads/) or newer.
 
 
 If necessary, adjust the or-tools and Gurobi paths in `.vscode/settings.json`.
