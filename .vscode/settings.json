@@ -5,7 +5,7 @@
         "-DORTOOLS_ROOT_WIN:STRING=C:/Program Files/or-tools_9.8Bin/",
         "-DORTOOLS_ROOT_UNIX:STRING=/opt/or-tools_x86_64_Ubuntu-24.04_cpp_v9.8.3296/",
         "-DGUROBI_ROOT_WIN:STRING=C:/gurobi1003/win64/",
-        "-DGUROBI_ROOT_UNIX:STRING=/opt/gurobi1003/linux64/",
+        "-DGUROBI_ROOT_UNIX:STRING=/opt/gurobi1200/linux64/",
         "-DBOOST_ROOT_WIN:STRING=C:/boost/boost_1_78_0/"
     ],
     "cmake.debugConfig": {
