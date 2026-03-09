@@ -9,7 +9,7 @@
 
 namespace VehicleRouting
 {
-namespace Algorithms
+namespace Model
 {
 
 NLOHMANN_JSON_SERIALIZE_ENUM(CallbackElement,
@@ -51,6 +51,13 @@ NLOHMANN_JSON_SERIALIZE_ENUM(CallbackElement,
                               {CallbackElement::BuildGraph, "BuildGraph"},
                               {CallbackElement::InfeasibleTailPathInequality, "InfTailPath"},
                               {CallbackElement::SPHeuristic, "SPHeur"}});
+}
+}
+
+namespace VehicleRouting
+{
+namespace Algorithms
+{
 
 NLOHMANN_JSON_SERIALIZE_ENUM(CutType,
                              {{CutType::None, "None"},
