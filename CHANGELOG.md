@@ -9,14 +9,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 - Tracking of incremental feasibility property (IFP) for routes
+- DOI Link to accepted article in EJOR
 
 ### Changed
 - 1D SubtourTracker updated to properly handle disconnected routes
+- Update solution files to the final version of the accepted manuscript
 
 ### Fixed
 - FCI (Framed Capacity Inequality) cut generation restored to original formulation
 - Add fractional cuts as LazyConstraints instead of UserCuts in Gurobi callback
 - Bug in logic for generating (Meet-in-the-middle) placement points in loading subproblem
+- Fixed incorrect namespace scope in callback element serialization string definitions
+- Visualization error in solution statistics that occurred when time was spent on fractional cut separation without identifying any cuts
 
 ---
 
