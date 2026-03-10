@@ -671,7 +671,14 @@ bool BranchAndCutSolver::CheckPath(const Collections::IdVector& path, Container&
 
     if (statusComplete == LoadingStatus::Infeasible)
     {
-        mInfeasibleTailPaths.emplace_back(0, path.front(), path.back());
+        if (mInputParameters.ContainerLoading.LoadingProblem.Variant == CLP::LoadingProblemParams::VariantType::NoLifo)
+        {
+            mInfeasibleTailPaths.emplace_back(std::vector{Arc(0, 0, path.front()), Arc(0, path.front(), path.back())});
+        }
+        else
+        {
+            mInfeasibleTailPaths.emplace_back(std::vector{Arc(0, path.front(), path.back())});
+        }
 
         Collections::IdVector sequence = {path.front(), path.back()};
         mLoadingChecker->AddTailTournamentConstraint(sequence);
@@ -694,10 +701,12 @@ void BranchAndCutSolver::DetermineExtendedInfeasiblePath()
 
     std::vector<Arc> tailPathToDelete;
 
-    for (auto& arc: mInfeasibleTailPaths)
+    for (auto& arcVector: mInfeasibleTailPaths)
     {
-        const auto& nodeI = nodes[arc.Tail];
-        const auto& nodeJ = nodes[arc.Head];
+        auto& lastArc = arcVector.back();
+
+        const auto& nodeI = nodes[lastArc.Tail];
+        const auto& nodeJ = nodes[lastArc.Head];
 
         auto weight = nodeI.TotalWeight + nodeJ.TotalWeight;
         auto volume = nodeI.TotalVolume + nodeJ.TotalVolume;
@@ -753,13 +762,15 @@ void BranchAndCutSolver::DetermineExtendedInfeasiblePath()
         }
 
         mInfeasibleArcs.emplace_back(0.0, nodeI.InternId, nodeJ.InternId);
-        tailPathToDelete.emplace_back(arc);
+        tailPathToDelete.emplace_back(lastArc);
     }
 
     for (const auto& path: tailPathToDelete)
     {
-        std::erase_if(mInfeasibleTailPaths,
-                      [path](Arc& arc) { return path.Head == arc.Head && path.Tail == arc.Tail; });
+        std::erase_if(
+            mInfeasibleTailPaths,
+            [&path](const std::vector<Arc>& arcPath)
+            { return !arcPath.empty() && arcPath.back().Head == path.Head && arcPath.back().Tail == path.Tail; });
     }
 }
 

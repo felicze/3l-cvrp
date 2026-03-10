@@ -18,7 +18,7 @@ class TwoIndexVehicleFlow
 
     void BuildModel(const std::vector<Arc>& startSolutionArcs,
                     const std::vector<Arc>& infeasibleArcs,
-                    const std::vector<Arc>& infeasibleTailPaths);
+                    const std::vector<std::vector<Arc>>& infeasibleTailPaths);
     void SetCallback(GRBCallback* callback);
     void Solve(const MIPSolverParams& parameters);
 
@@ -41,7 +41,8 @@ class TwoIndexVehicleFlow
     void AddConstraints();
     void AddObjective();
     void SetStartSolution(const std::vector<Arc>& startSolutionArcs);
-    void SetInfeasibleArcs(const std::vector<Arc>& infeasibleArcs, const std::vector<Arc>& infeasibleTailPaths);
+    void SetInfeasibleArcs(const std::vector<Arc>& infeasibleArcs,
+                           const std::vector<std::vector<Arc>>& infeasibleTailPaths);
     void SetParameters(const MIPSolverParams& inputParameters);
 };
 

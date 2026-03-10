@@ -48,7 +48,7 @@ class BranchAndCutSolver
 
     std::ofstream mLogFile;
     std::vector<Arc> mInfeasibleArcs;
-    std::vector<Arc> mInfeasibleTailPaths;
+    std::vector<std::vector<Arc>> mInfeasibleTailPaths;
     Collections::SequenceSet mInfeasibleCombinations;
     std::vector<Arc> mStartSolutionArcs;
 
